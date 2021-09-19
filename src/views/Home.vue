@@ -5,11 +5,11 @@
 </template>
 
 <script>
-import Pagination from '../components/Pagination.vue'
+import Pagination from "../components/Pagination.vue";
 export default {
   name: "Home",
-  components:{
-    Pagination
-  }
+  components: {
+    Pagination,
+  },
 };
 </script>

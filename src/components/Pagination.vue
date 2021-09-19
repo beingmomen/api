@@ -35,13 +35,18 @@ export default {
     },
   },
   mounted() {
-    axios.get("https://jsonplaceholder.typicode.com/todos")
-      .then(res => {
-        res.data.forEach(data => {
-            this.items.push({id: data.id, title: data.title, completed: data.completed})
+    axios
+      .get("https://jsonplaceholder.typicode.com/todos")
+      .then((res) => {
+        res.data.forEach((data) => {
+          this.items.push({
+            id: data.id,
+            title: data.title,
+            completed: data.completed,
+          });
         });
       })
-      .catch( error => console.log(error))
+      .catch((error) => console.log(error));
   },
 };
 </script>
